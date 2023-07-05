@@ -1,0 +1,232 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/Rentals.css">
+<link rel="shortcut icon" href="../../images/titleLogo.png">
+<title>Destinare Properties</title>
+</head>
+
+<div>
+<ul id = "NavBar">
+	<li class ="NavBarLeft"><a class ="NBContent"  href ="index.php">HOME</a></li>
+	<li class ="NavBarLeft"><a class ="NBContent" href ="aboutUs.php">ABOUT US</a></li>
+	<li class ="NavBarLeft"><a class ="NBContent" href ="contactUs.php">CONTACT US</a></li>
+	<li><a href = "../viewReview_guest_page.php"><img id = "logo" src = "../../images/logo2.png"></a></li>
+	<li class ="NavBarRight"><a class ="NBContent" href ="logout.php"><?php echo htmlspecialchars($_SESSION["username"]); ?><a style="color: white;font-weight: bold;" href="logout.php">Logout</a><br><a style="color: white;font-weight: bold;"  href="resetpassword.php">Reset Password</a><div class="dropdown">
+	<li class ="NavBarRight"><a class ="NBContent" href ="lands.php">LAND</a></li>
+	<li class ="NavBarRight"><a class ="NBContent" href ="Rentals.php" id = "ActiveNBContent">RENTALS</a></li>
+	<li class ="NavBarRight"><a class ="NBContent" href ="sales1.php">SALES</a></li>
+</ul>
+</div>
+<br>
+<body>
+
+<center>
+<div id ="search">
+<form action = "../livesearch" method = "get" class = "searchForm" >
+<input type = "text" placeholder="What are you looking for?" name ="q">
+<button type = "submit"><img src = "../../images/searchIcon.webp" ></button>
+
+</form>
+</div>
+</center>
+
+<br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r1.jpg">
+      <img src="../../images/r1.jpg" alt="Galle" width="600" height="400">
+    </a>
+    <div class="desc"><b> Heritage, Galle</b><br> </br>
+<b>Rs 450000 Per month</b><br><br>
+Two Story 4 Bedrooms House<br>
+ with 4 bed room Two bathroom with servant toilet Large balconies
+
+<br><br><form method="post" action="../payment.php">
+        <input type="submit" class="P0001" value="Buy now"/>
+        <input type="hidden" name="action" value="P0001"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r2.jpg">
+      <img src="../../images/r2.jpg" alt="Gampaha" width="600" height="400">
+    </a>
+    <div class="desc"> <b>Waterfall Residencies, Gampaha</b><br></br>
+         <b>Rs 500000 Per month</b>
+<br>
+<br>
+3 BR house Gated Community<br>
+3 bedroom  Bathrooms Living | Dining Maid’s room 
+
+<br><br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0002" value="Buy now"/>
+        <input type="hidden" name="action" value="P0002"/>
+		</form>
+</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r3.jpg">
+      <img src="../../images/r3.jpg" alt="Colombo" width="600" height="400">
+    </a>
+    <div class="desc"><b> Water Estate, Colombo</b><br></br>
+<b>Rs 400000 Per month</b><br><br>
+Two Story 4 Bedrooms 2 bathroom with servant toilet Large balconies House 
+
+<br><br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0003" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0003"/>
+
+  </div>
+</div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r4.jpg">
+      <img src="../../images/r4.jpg" alt="Kandy" width="600" height="400">
+    </a>
+    <div class="desc"><b>Scottish Island, Digana</b><br></br> <b>Rs 300000 Per month</b><br><br>
+ Gated Community House <br>
+ This well designed newly built house located in an exclusive neighborhood
+
+<br><br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0004" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0004"/>
+</div>
+  </div>
+
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r5.jpg">
+      <img src="../../images/r5.jpg" alt="colombo" width="600" height="400">
+    </a>
+    <div class="desc"><b> Cinnamon residenciens, Colombo</b><br></br>
+<b>Rs 760 000 Per month</b><br><br>
+3 Bedroom Apartment  At Cinnamon Garden Residencies 03 Bedrooms 02 Bathrooms <br>
+
+<br><br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0005" value="Buy now"/>
+        <input type="hidden" name="action" value="P0005"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r6.jpg">
+      <img src="../../images/r6.jpg" alt="Kegalle" width="600" height="400">
+    </a>
+    <div class="desc"><b> The Palace, Kegalle</b><br></br>
+<b>Rs.200 000  Per month</b><br><br>
+Havelock city Garden view 3 bedroom 2 bathroom Maids Room and Bathroom 1390 sqft Unfurnished<br>
+
+
+<br><br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0006" value="Buy now"/>
+        <input type="hidden" name="action" value="P0006"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r7.jpg">
+      <img src="../../images/r7.jpg" alt="Colombo" width="600" height="400">
+    </a>
+    <div class="desc"><b>Mill House, Colombo</b><br></br><b>Rs 375 000 Per month</b><br><br>
+Large bungalow builds to Moroccan style in close proximity to the Overseas school of Colombo, fully furnished<br>
+
+<br><br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0007" value="Buy now"/>
+        <input type="hidden" name="action" value="P0007"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/r8.jpg">
+      <img src="../../images/r8.jpg" alt="Dalugama" width="600" height="400">
+    </a>
+    <div class="desc"><b>Premium villas, Dalugama</b><br></br><b>Rs 528 000 Per month</b><br><br>
+Fully Furnished Luxury Villa House For Rent:12 Bed Rooms With Attached Bathrooms,A/C,Hot Water<br><br>
+
+
+<br><br>  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0008" value="Buy now"/>
+        <input type="hidden" name="action" value="P0008"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+<footer>
+<img src ="../../images/logo.png" class ="footerImage">
+<div class = "slogan">
+	<p>Find the place of your dreams....</p>
+	We will be with you every step of the way
+</div>
+
+<div class ="about">
+	<p class = "bold"><b>About</b></p>
+	<p class = "normal"><a href = "">About Us</a></p>
+	<p class = "normal"><a href="">Contact Us</a></p>
+</div>
+<div class="contactUs" >
+	<p class = "bold"><b>Contact Us</b></p>
+	<p class ="normal">Destinare Properties<br>
+	Head office, No.100<br>
+	Malwathugoda,Galagedara<br>
+	Kandy<br>
+	Sri Lanka</p>
+
+</div>
+
+<div class="contactUs" >
+	<p class = "bold"><b>Contact Details</b></p>
+	<p class ="normal">+94 5566 23155<br>
+	+94 6456 32565<br>
+	destinareProperties@info.lk<br><br>
+	Destinare Properties © by MLB_02.02_03
+	</p>
+</div>
+</footer>
+
+
+
+</body>
+
+</html>
+

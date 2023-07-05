@@ -1,0 +1,287 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/sales.css">
+<link rel="shortcut icon" href="../../images/titleLogo.png">
+<title>Destinare Properties</title>
+</head>
+<div>
+<ul id = "NavBar">
+	<li class ="NavBarLeft"><a class ="NBContent"  href ="index.php">HOME</a></li>
+	<li class ="NavBarLeft"><a class ="NBContent" href ="aboutUs.php">ABOUT US</a></li>
+	<li class ="NavBarLeft"><a class ="NBContent" href ="contactUs.php">CONTACT US</a></li>
+	<li><a href = "../viewReview_guest_page.php"><img id = "logo" src = "../../images/logo2.png"></a></li>
+	<li class ="NavBarRight"><a class ="NBContent" href ="logout.php"><?php echo htmlspecialchars($_SESSION["username"]); ?><a style="color: white;font-weight: bold;" href="logout.php">Logout</a><br><a style="color: white;font-weight: bold;"  href="resetpassword.php">Reset Password</a><div class="dropdown">
+	<li class ="NavBarRight"><a class ="NBContent" href ="lands.php">LAND</a></li>
+	<li class ="NavBarRight"><a class ="NBContent" href ="Rentals.php">RENTALS</a></li>
+	<li class ="NavBarRight"><a class ="NBContent" href ="sales1.php"id = "ActiveNBContent">SALES</a></li>
+</ul>
+</div>
+<br>
+<center>
+<div id ="search">
+<form action = "../livesearch" method = "get" class = "searchForm" >
+<input type = "text" placeholder="What are you looking for?" name ="q">
+<button type = "submit"><img src = "../../images/searchIcon.webp" ></button>
+</form>
+</div>
+</center>
+<body>
+<br><br><br><br><br><br>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h1.jpg">
+      <img src="../../images/h1.jpg" alt="hotel" width="600" height="400">
+    </a>
+    <div class="desc"><b>Rs 105,000,000</b><br><br>
+<b>BRAND NEW LUXURY TYPE OF APARTMENT IN
+MOUNT LAVINIA.</b><br><br>
+
+ Price 33 million ( Small Negotiable ),
+ Large 3 bedrooms, 
+ 2 Luxury Washrooms,
+ Digital Main Door lock,<br>
+ Door and Pantry works are done with No. 1 Teakwood,
+ Kitchen pantry with Hops & Hoods<br>
+ Galle Road facing Balconies,
+ Allocated Car parking,<br>
+ High-Quality Lift facility,
+ 24 hours Security facility,
+ DFCC Bank Loan with the tri-party agreement.
+
+<br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0017" value="Buy now"/>
+        <input type="hidden" name="action" value="P0017"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h4.jpg">
+      <img src="../../images/h4.jpg" alt="malabe" width="600" height="400">
+    </a>
+    <div class="desc"> <b>Rs.95,000,000</b><br><br>
+<b>EMPERROR 03 Bedroom Furnished  Apartment,Colombo 03 </b><br><br>
+Emperror Residencies,
+Large living-dining pantry with two rooms and bathrooms, this apartment is from Monarch Higher floor.<br>
+02 bedrooms, 02 bathrooms, fully furnished and fully air-conditioned, sea view, standby generator, barbecue pavilion,<br>
+function hall, designated parking, swimming pool, gymnasium and 24 hours security.
+1700 Sqft.
+
+<br><form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0018" value="Buy now"/>
+        <input type="hidden" name="action" value="P0018"/>
+		</form>
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h11.jpg">
+      <img src="../../images/h11.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><b>Rs.45,000,000</b><br><br>
+<b>Havelock City Brand New 3 Room Luxury Apartment in Colombo.</b><br><br>
+3 Bedrooms 1300 sqft apartment for sale in Colombo 5 for Rs. 79 million (total)
+Property Code: A12812
+Colombo 5,
+Havelock City,
+Peterson Tower,
+Higher Floor,
+3 Rooms,
+2 Washrooms,
+Maids Room & Bathroom,
+1300 Sq.ft,
+Sea & City View.<br>
+Lower Floor
+Unfurnished
+1085 Sq.ft
+Living and Dining Room
+Pantry Kitchen
+Swimming Pool & Gym
+Deed & COC Available
+
+<br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0019" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0019"/>
+</div>
+  </div>
+  </div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h12.jpg">
+      <img src="../../images/h12.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"> <b>Rs.200,000,000</b><br><br>
+<b>Super Luxury Villa in Kandy.</b><br><br>
+If you want to live in the Most Luxuries house in Kandy or
+if you are looking for an investment with a very good return
+by providing short and long term rental for tourist,
+ this property would be an ideal choice.<br>
+Address: Weerakoon Gardens, Kandy - Kandy's most luxurious residential neighborhood,
+Bedrooms: 7,
+Bathrooms: 8,
+House size: 7,050.0 sqft,
+Land size: 36.5 perches,
+Within Kandy city limits,
+10 minutes drive to Kandy market and town.
+ 
+ <br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0020" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0020"/>
+</div>
+</div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h7.jpg">
+      <img src="../../images/h7.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><b>Rs. 60,000,000 </b><br><br>
+<b>3 Bedroom Luxurious Apartment In Colombo : LINCOLN HOUSE</b><br><br>
+ LINCOLN HOUSE is an exclusive development of 33 luxury apartments located on No.51 Norris Canal Road,<br>
+ Hospital Square, Colombo directly opposite Asiri Central Hospital commands an envious location.<br>
+ With exceptional attention to detail, outstanding specifications, full use of internal functions,<br>
+ quality and rich implications, Lincoln offers true living without compromise.Roof top swimming pool
+Imported porcelain tiles for the floors, ceramic tiles for the toilets & pantry walls (Lanka Wall Tiles).
+
+<br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0021" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0021"/>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h10.jpg">
+      <img src="../../images/h10.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><b>Rs. 78,000,000</b><br><br>
+<b>Brand New 4 Bedroom Apartment in Colombo 04 - STAR LIFE Residencies.</b><br><br>
+At STAR LIFE Residencies you get to experience a refreshing sea breeze in the morning and watch a magical sunset every day. <br>
+An apartment complex on Macleod road with 24 units made to satisfy your requirements,
+it offers a range of facilities within the complex to pamper residents with tranquility and grandeur.
+In here, you will find a home in close proximity to key locations with modern designs and surrounding city,High-Quality Lift facility,
+ 24 hours Security facility,
+that you'll never get bored staring at.Experience effortless comfort in ultimate luxury at your home!
+
+<br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0022" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0022"/>
+</div>
+  </div>
+  </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h8.jpg">
+      <img src="../../images/h8.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><b>Rs.34 million</b><br><br>
+<b>Super Luxury Villa for Sale in the Heart of Galle City!</b><br><br>
+9 Floors
+12 Units
+Rs. 34 Million Onwards
+Start from 1360 Sq. Ft. Upwards
+Can Occupy May 2023
+<br><br>
+
+<b>Common Facilities :</b>
+ Swimming Pool
+ Gymnasium
+ Stand by the generator to lift and common area
+ Car Park
+Fire extinguishers and lightning protection system
+ Sewage treatment plant
+ Allocated car park
+ Intercom facility.<br>
+ Main water supply by means of Underground Sump and Overhead Tanks provided.<br><br>
+
+
+<br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0023" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0023"/>
+</div>
+  </div>
+  </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../../images/h3.jpg">
+      <img src="../../images/h3.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><b>Rs. 320,000,000</b><br><br>
+ <b>Villa for Sale in Kahathuduwa: Canterbury Golf Villas</b><br><br>
+ Sri Lanka's First Victorian Style Golf resort Apartments & Residencies.<br>
+ If you yearn for a sophisticated way of life then you belong at Canterbury Golf Villas, where Comfort meets Luxury.<br>
+ Designed by renowned architect Phillip Weeraratne, the villas boast private swimming pools,<br>
+ amazing rural views and many variations (3 or 4 bedroom villas on 6/8/10 perches of land),<br>
+ add to the this the restaurant, Pub and Lounge made for the villa residents and we have a recipe for tasteful and stylish living.
+<br><a href="url">  <form method="post" action="../payment.php">
+        <input type="submit" name="action" class="P0024" value="Buy now"/></a>
+        <input type="hidden" name="action" value="P0024"/>
+      </form>
+</div>
+  </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+<footer>
+<img src ="../../images/logo.png" class ="footerImage">
+<div class = "slogan">
+	<p>Find the place of your dreams....</p>
+	We will be wih you every step of the way
+</div>
+
+<div class ="about">
+	<p class = "bold"><b>About</b></p>
+	<p class = "normal"><a href = "">About Us</a></p>
+	<p class = "normal"><a href="">Contact Us</a></p>
+</div>
+
+<div class="contactUs" >
+	<p class = "bold"><b>Contact Us</b></p>
+	<p class ="normal">Destinare Properties<br>
+	Head office, No.100<br>
+	Malwathugoda,Galagedara<br>
+	Kandy<br>
+	Sri Lanka</p>
+</div>
+
+<div class="contactUs" >
+	<p class = "bold"><b>Contact Details</b></p>
+	<p class ="normal">+94 5566 23155<br>
+	+94 6456 32565<br>
+	destinareProperties@info.lk<br><br>
+	Destinare Properties © by MLB_02.02_03
+	</p>
+</div>
+</footer>
+</body>
+
+
+</html>

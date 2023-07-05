@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/Main.css"/>
+<link rel="shortcut icon" href="images/titleLogo.png">
+<script src="js/Main.js" type ="text/javascript"> </script>
+<title>Destinare Properties</title>
+</head>
+<body>
+<div class ="backgroundImage" >
+<header>
+	<div>
+		<ul class = "NavBar">
+			<li class ="NavBarLeft"><a class ="NBContent" id = "ActiveNBContent" href ="">HOME</a></li>
+			<li class ="NavBarLeft"><a class ="NBContent" href ="">ABOUT US</a></li>
+			<li class ="NavBarLeft"><a class ="NBContent" href ="">CONTACT US</a></li>
+			<li><img id = "logo" src = "../images/logo2.png"></li>
+			<li class ="NavBarRight"><a class ="NBContent" href ="login.php">LOGIN</a></li>
+			<li class ="NavBarRight"><a class ="NBContent" href ="">LAND</a></li>
+			<li class ="NavBarRight"><a class ="NBContent" href ="">RENTALS</a></li>
+			<li class ="NavBarRight"><a class ="NBContent" href ="">SALES</a></li>
+		</ul>
+	</div>
+</header>
+</div>
+<center>
+<div id ="search">
+<form action = "https://www.google.com/search" method = "get" class = "searchForm" >
+<input type = "text" placeholder="What are you looking for?" name ="q">
+<button type = "submit"><img src = "images/searchIcon.webp" ></button>
+<form>
+</div>
+</center>
+<div class = "heading"> 
+	Featured <span>Properties</span>
+</div>
+
+<center>
+<div id = "mainSlideShow" >  
+
+	<div class = "slideShow1">
+		
+		<div class = "mySlide fade" >
+			<a href><img src = "images/slideShow1.jpg"></a>
+			<div class = "slideText">Caption</div>
+		</div>
+		
+		<div class = "mySlide fade" style = "display:block">
+			<a href=""><img src = "images/slideShow2.jpg" ></a>
+			<div class = "slideText">Caption</div>
+		</div>
+		
+		<div class = "mySlide fade">
+			<a href=""><img src = "images/slideShow3.jpg"></a>
+			<div class = "slideText">Caption</div>
+		</div>
+		
+	</div>
+	
+	
+
+</div>
+</center>
+
+</body>
+</html>

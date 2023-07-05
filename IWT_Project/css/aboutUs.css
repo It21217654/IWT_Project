@@ -1,0 +1,330 @@
+@charset"utf-8";
+
+body {
+margin:0;
+}
+
+.logo {
+style:width:100px;height:95px;
+display:inline-block;
+float:left;
+padding-left:110px;
+padding-top:5px;
+}
+
+
+#NavBar {
+list-style-type:none;
+margin: 0;
+padding: 0;
+width: 100%;
+overflow:hidden;
+position:fixed;
+}
+
+
+.NavBarLeft {
+float:left;
+}
+
+.NavBarRight {
+float:right;
+}
+
+.NBContent {
+color:white;
+font-size:18px;
+text-align: center;
+display:block;
+padding:30px;
+text-decoration: none;
+}
+
+#ActiveNBContent {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+.NBContent:hover {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+@charset"utf-8";
+
+body {
+margin:0;
+font-family:Arial;
+}
+
+#logo {
+style:width:100px;height:95px;
+display:inline-block;
+float:left;
+padding-left:110px;
+padding-top:5px;
+}
+
+
+
+#NavBar {
+list-style-type:none;
+margin: 0;
+padding: 0;
+width: 100%;
+overflow:hidden;
+position:fixed;
+background-color:rgba(5,5,66);
+}
+
+
+.NavBarLeft {
+float:left;
+}
+
+.NavBarRight {
+float:right;
+}
+
+.NBContent {
+color:white;
+font-size:18px;
+text-align: center;
+display:block;
+padding:30px;
+text-decoration: none;
+}
+
+#ActiveNBContent {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+.NBContent:hover {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+
+#search {
+position: relative;
+width:80%;
+}
+   
+@charset"utf-8";
+
+body {
+margin:0;
+font-family:Arial;
+}
+
+#logo {
+style:width:100px;height:95px;
+display:inline-block;
+float:left;
+padding-left:110px;
+padding-top:5px;
+}
+
+
+
+#NavBar {
+list-style-type:none;
+margin: 0;
+padding: 0;
+width: 100%;
+overflow:hidden;
+position:fixed;
+background-color:rgba(5,6,66);
+}
+
+
+.NavBarLeft {
+float:left;
+}
+
+.NavBarRight {
+float:right;
+}
+
+.NBContent {
+color:white;
+font-size:18px;
+text-align: center;
+display:block;
+padding:30px;
+text-decoration: none;
+}
+
+#ActiveNBContent {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+.NBContent:hover {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+
+#search {
+position: relative;
+width:80%;
+}
+ 
+
+
+.abus {
+	background: rgba(6, 18, 137, 0.8);
+	background-image: url("../images/bg5.jpg");
+	background-repeat: no repeat;
+	background-size: cover;
+	margin-bottom: -100px;
+}
+
+
+
+.aboutuswb{
+  width: 75%;
+  background-color : #fff;
+  background-image : url(../images/bg2.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  padding: 20px 60px 30px 20px;
+  box-shadow: 0 5px 500px rgba(0, 0, 0, 0.2);
+  text-align:left;
+  color: white;
+  text-style : Poppins;
+  margin-left: 100px;
+  margin-right:150px;
+ 
+  padding:50px;
+ 
+}
+
+}
+
+.abusp {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+
+footer {
+background-repeat: no-repeat;
+background-image: url("../images/footer.jpg");
+background-color:white;
+background-position:center;
+height:200px;
+position:relative;
+background-size:cover;
+background-attachment: fixed;
+z-index:-1;
+margin-top:100px;
+margin-bottom:0;
+}
+
+
+.footerImage {
+	float:left;
+	position:relative;
+	z-index:8;
+	height:200px;
+	width:200px;
+	margin-top:0px;
+	margin-bottom:0;
+}
+.slogan {
+	color:white;
+	float:left;
+	padding: 5px 20px 15px 0;
+	margin-top:40px;
+	border-right:3px solid white;
+	vertical-align:center;
+}
+
+.slogan p{
+	color:white;
+	font-family:"Lucida Handwriting";
+}
+
+.bold, .normal{
+color:white;
+}
+
+.bold{
+	font-size:18px;
+}
+
+.normal a{
+	color:white;
+	text-decoration:none;
+}
+
+.about, .contactUs {
+	float:left;
+	padding:5px 5px 5px 10px;
+	margin: 20px 5px 20px 20px;
+}
+
+
+footer {
+background-repeat: no-repeat;
+background-image: url("../images/footer.jpg");
+background-color:white;
+background-position:center;
+height:200px;
+position:relative;
+background-size:cover;
+background-attachment: fixed;
+z-index:-1;
+margin-top:100px;
+margin-bottom:0;
+}
+
+
+.footerImage {
+	float:left;
+	position:relative;
+	z-index:8;
+	height:200px;
+	width:200px;
+	margin-top:0px;
+	margin-bottom:0;
+}
+.slogan {
+	color:white;
+	float:left;
+	padding: 5px 20px 15px 0;
+	margin-top:40px;
+	border-right:3px solid white;
+	vertical-align:center;
+}
+
+.slogan p{
+	color:white;
+	font-family:"Lucida Handwriting";
+}
+
+.bold, .normal{
+color:white;
+}
+
+.bold{
+	font-size:18px;
+}
+
+.normal a{
+	color:white;
+	text-decoration:none;
+}
+
+.about, .contactUs {
+	float:left;
+	padding:5px 5px 5px 10px;
+	margin: 20px 5px 20px 20px;
+}

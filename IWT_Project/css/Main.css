@@ -1,0 +1,239 @@
+@charset"utf-8";
+
+body {
+margin:0;
+font-family:"Arial";
+}
+
+#logo {
+style:width:100px;height:95px;
+display:inline-block;
+float:left;
+padding-left:105px;
+padding-top:5px;
+}
+
+.backgroundImage {
+background-repeat: no-repeat;
+background-image: url("../images/HeaderBackground.jpeg");
+background-position:center;
+height:600px;
+position:relative;
+background-size:cover;
+background-attachment: fixed;
+}
+
+.backgroundImage1 {
+background-repeat: no-repeat;
+background-image: url("../images/backgroundImage1.png");
+background-color:white;
+background-position:center;
+height:400px;
+position:relative;
+background-size:cover;
+background-attachment: fixed;
+z-index:-1;
+margin-top:-120px;
+}
+
+.NavBar {
+list-style-type:none;
+margin: 0;
+padding: 0;
+width: 100%;
+overflow:hidden;
+position:fixed;
+transition: background-color 0.5s;
+transition-timing-function: ease-in-out;
+z-index:10;
+}
+
+.NavBar-scrolled {
+background-color:rgba(5, 6, 66,0.8);
+box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+
+.NavBarLeft {
+float:left;
+}
+
+.NavBarRight {
+float:right;
+}
+
+.NBContent {
+color:white;
+font-size:18px;
+text-align: center;
+display:block;
+padding:30px;
+text-decoration: none;
+}
+
+#ActiveNBContent {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+.NBContent:hover {
+text-decoration:underline;
+text-underline-position: under;
+}
+
+
+.searchForm {
+border-radius: 60px;
+border:0;
+background-color:white;
+display: flex;
+width:50%;
+}
+
+.searchForm input {
+	background: transparent;
+	flex:1;
+	border:0;
+	outline:none;
+	padding:10px;
+}
+
+::placeholder {
+	color:rgba(5, 6, 66,0.8);
+	font-size:15px;
+	padding-left: 7px;
+	border:0;
+}
+
+.searchForm button img{
+	width: 30px;
+}
+
+.searchForm button {
+	border: 0;
+	border-radius: 50%;
+	background-color:rgba(5, 6, 66);
+	width: 60px;
+	height: 60px;
+	cursor:pointer;
+}
+
+
+#search {
+border-radius:6px;
+padding:50px;
+background-color:black;
+margin-top:-40px;
+Opacity:0.7;
+width:80%;
+}
+
+
+#mainSlideShow {
+  width: 80%;
+  position: relative;
+  margin: 25px 0 0 0;
+}
+
+.header { 
+	font-size:25px;
+}
+
+.mySlide {
+	display:none;
+}
+
+.mySlide img {
+	width:100%;
+	border-radius:25px;
+	z-index:8;
+}
+
+.slideText {
+  color: white;
+  position: relative;
+  font-size:28px;
+  text-align: center;
+  margin-top:-65px;
+  z-index:9;
+  font-family:"Lucida Handwriting";
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.heading {
+	position:relative;
+	font-size:35px;
+	margin-top:-230px;
+	z-index:3;
+}
+
+.heading span {
+	color: rgba(5, 6, 66);
+}
+
+footer {
+background-repeat: no-repeat;
+background-image: url("../images/footer.jpg");
+background-color:white;
+background-position:center;
+height:200px;
+position:relative;
+background-size:cover;
+background-attachment: fixed;
+z-index:-1;
+margin-top:100px;
+margin-bottom:0;
+}
+
+
+.footerImage {
+	float:left;
+	position:relative;
+	z-index:8;
+	height:200px;
+	width:200px;
+	margin-top:0px;
+	margin-bottom:0;
+}
+.slogan {
+	color:white;
+	float:left;
+	padding: 5px 20px 15px 0;
+	margin-top:40px;
+	border-right:3px solid white;
+	vertical-align:center;
+}
+
+.slogan p{
+	color:white;
+	font-family:"Lucida Handwriting";
+}
+
+.bold, .normal{
+color:white;
+}
+
+.bold{
+	font-size:18px;
+}
+
+.normal a{
+	color:white;
+	text-decoration:none;
+}
+
+.about, .contactUs {
+	float:left;
+	padding:5px 5px 5px 10px;
+	margin: 20px 5px 20px 20px;
+	z-index:9;
+}

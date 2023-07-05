@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(rgba(255, 255, 255), rgba(5, 6, 66, 0.5)), url(../images/slideShow2.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	color: #4C4C4B;
+}
+
+h1 {
+	margin-top: 25px;
+	padding-top: 22px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+h1::after {
+	content: " ";
+	display: flex;
+	border-top: 2px solid #585858;
+	margin-top: 16px;
+}
+
+#searchBox {
+	height: 48px;
+	width: 600px;
+	background: white;
+	padding: 8px 32px 8px 32px;
+	color: #4C4C4B;
+	font-size: 16px;
+	border-radius: 50px;
+	border-color: transparent;
+}
+
+#searchBox:focus {
+	outline : none;
+}
+
+#dataViewer {
+	border-radius: 20px;
+	padding: 32px;
+	margin-top: 23px;
+	list-style: none;
+	background: rgba(5, 6, 66,0.5);
+	width: 900px;
+	color: white;
+	height: 400px;
+	overflow-y: scroll;
+}
+
+#dataViewer li {
+	border-radius: 20px;
+	color: #4c4c4b;
+	padding: 8px 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 24px;
+	background-color: white;
+}
+
+
+#dataViewer::-webkit-scrollbar {
+	width: 4px;
+	background: #101010;
+	display:none;
+}
+
+#dataViewer::-webkit-scrollbar-thumb {
+	background: #ffffff;
+}
+
+.button{
+	background-color: #4C4C4B;
+ 	color: white;
+ 	float: right;
+	width: 150px;
+ 	text-align: center;
+  	text-decoration: none;
+  	font-size: 10px; 
+  	line-height: 25px;
+  	border-radius: 70px;
+  	padding: 5px 15px 5px 15px;
+  	margin-top: -3px;
+  	margin-right: 5px;
+}
+
+.disabled{
+	background-color: #4C4C4B;
+ 	color: white;
+ 	float: right;
+	width: 150px;
+ 	text-align: center;
+  	text-decoration: none;
+  	font-size: 10px; 
+  	line-height: 25px;
+  	border-radius: 70px;
+  	padding: 5px 15px 5px 15px;
+  	margin-top: -3px;
+  	margin-right: 5px;
+	cursor: not-allowed;
+}
+
+.button:hover{
+	background-color: rgba(5, 6, 66,0.8);
+	color: #fff;
+}
+
+#closeButton {
+	display: flex;
+	margin: 60px 0px -60px -1000px;
+	border:none;
+	border-radius:25px;
+}
+
+
+#closeButton:hover {
+	background-color: white;
+	cursor:pointer;
+}
+
+.text {
+	color: white;
+	padding: 10px 10px;
+	background-color: #4C4C4B;
+	border-radius:25px;
+}
